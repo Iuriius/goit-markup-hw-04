@@ -126,8 +126,10 @@ section {
 }
 
 .hero-background {
-    background-image: url();
-    background: var(--background-color-footer);
+    background-image: url("https://github.com/Iuriius/goit-markup-hw-04/blob/ea42f1e678d381dc4729ff0d28ab221e2d18f93d/images/hero-bg-img.jpg"),
+        url("https: //github.com/Iuriius/goit-markup-hw-04/blob/f661bece64f41682cd13b596fd0bfd693a6a0a91/images/herooverlay.png"),
+        url("https: //github.com/Iuriius/goit-markup-hw-04/blob/ea42f1e678d381dc4729ff0d28ab221e2d18f93d/images/hero-bg-spare.jpg");
+    /* background: var(--background-color-footer); */
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
