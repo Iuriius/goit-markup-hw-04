@@ -89,11 +89,7 @@ section {
     padding-bottom: 32px;
 }
 
-.navitem {
-    /* margin-right: 50px; */
-}
-
-.contacts {
+.contacts-mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -102,6 +98,37 @@ section {
     text-decoration: none;
     padding: 32px 0;
     align-items: center;
+    fill: var(--secondary-color);
+}
+
+.contacts-mail:hover,
+:focus {
+    fill: var(--accent-color);
+}
+
+.contacts-phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 32px 0;
+    align-items: center;
+    fill: var(--secondary-color);
+}
+
+.contacts-phone:hover,
+:focus {
+    fill: var(--accent-color);
+}
+
+.contacts-mail-icon {
+    margin-right: 10px;
+}
+
+.contacts-phone-icon {
+    margin-right: 10px;
 }
 
 .active-page {
@@ -126,10 +153,12 @@ section {
 }
 
 .hero-background {
-    background-image: url("https://github.com/Iuriius/goit-markup-hw-04/blob/ea42f1e678d381dc4729ff0d28ab221e2d18f93d/images/hero-bg-img.jpg"),
-        url("https: //github.com/Iuriius/goit-markup-hw-04/blob/f661bece64f41682cd13b596fd0bfd693a6a0a91/images/herooverlay.png"),
-        url("https: //github.com/Iuriius/goit-markup-hw-04/blob/ea42f1e678d381dc4729ff0d28ab221e2d18f93d/images/hero-bg-spare.jpg");
-    /* background: var(--background-color-footer); */
+    background: var(--background-color-footer);
+    background-image: url("../images/herooverlay.png"),
+        url("../images/hero-bg-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -144,10 +173,6 @@ section {
     text-transform: uppercase;
     margin: 0 auto;
     width: 696px;
-}
-
-.hero-container {
-    /* align-items: center; */
 }
 
 .button {
@@ -279,7 +304,7 @@ section {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
 }
 
 footer {
@@ -319,7 +344,12 @@ footer {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+}
 
+.example-card:hover,
+:focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container {
@@ -389,4 +419,97 @@ img {
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
+}
+
+.clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.container-clients {
+    display: flex;
+    gap: 30px;
+}
+
+.clientbox {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: #AFB1B8;
+}
+
+.clientbox:hover,
+:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+}
+
+.social-links:hover,
+:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: var(--tertiary-color);
+}
+
+.container-footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.container-footer-left {
+    width: 231px;
+    height: 163px;
+}
+
+.container-footer-join {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 12px;
+
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+}
+
+.social-links-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--tertiary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-links-footer:hover,
+:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: var(--tertiary-color);
 }
