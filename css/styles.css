@@ -90,6 +90,8 @@ section {
 }
 
 .contacts-mail {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -97,13 +99,7 @@ section {
     color: var(--secondary-color);
     text-decoration: none;
     padding: 32px 0;
-    align-items: center;
-    fill: var(--secondary-color);
-}
 
-.contacts-mail:hover,
-:focus {
-    fill: var(--accent-color);
 }
 
 .contacts-phone {
@@ -114,17 +110,19 @@ section {
     color: var(--secondary-color);
     text-decoration: none;
     padding: 32px 0;
+    display: flex;
     align-items: center;
     fill: var(--secondary-color);
 }
 
 .contacts-phone:hover,
-:focus {
+.contacts-phone:focus {
     fill: var(--accent-color);
 }
 
 .contacts-mail-icon {
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .contacts-phone-icon {
@@ -154,14 +152,16 @@ section {
 
 .hero-background {
     background: var(--background-color-footer);
-    background-image: url("../images/herooverlay.png"),
-        url("../images/hero-bg-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-img.jpg");
+    height: 600px;
+    max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .hero {
@@ -347,9 +347,21 @@ footer {
 }
 
 .example-card:hover,
-:focus {
-    cursor: pointer;
+.example-card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.example-card-block {
+    text-decoration: none;
+    text-decoration-style: none;
+    display: block;
+    cursor: default;
+    color: var(--primary-color);
+}
+
+.example-card-block:hover,
+.example-card-block:focus {
+    color: inherit;
 }
 
 .container {
@@ -443,14 +455,13 @@ img {
 }
 
 .clientbox:hover,
-:focus {
+.clientbox:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
 }
 
 .socials {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 16px;
     gap: 10px;
@@ -462,14 +473,14 @@ img {
     align-items: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     fill: #AFB1B8;
 }
 
 .social-links:hover,
-:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
+.social-links:focus {
     fill: var(--tertiary-color);
+    background-color: var(--accent-color);
 }
 
 .container-footer {
@@ -477,6 +488,7 @@ img {
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
+    align-items: baseline;
 }
 
 .container-footer-left {
@@ -485,15 +497,7 @@ img {
 }
 
 .container-footer-join {
-    width: 206px;
-    height: 80px;
     margin-left: 70px;
-    margin-top: 12px;
-
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: var(--tertiary-color);
 }
 
 .social-links-footer {
@@ -508,8 +512,15 @@ img {
 }
 
 .social-links-footer:hover,
-:focus {
+.social-links-footer:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
     fill: var(--tertiary-color);
+}
+
+.joinus {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
 }
